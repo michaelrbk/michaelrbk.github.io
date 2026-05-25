@@ -48,7 +48,7 @@
         "Maintain the project documentation wiki to support onboarding and knowledge sharing.",
         "Champion AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
       ],
-      "details": "",
+      "details": "Joined IntrosMatter as a back-end contributor while still leading a BairesDev Partnerships team. The codebase had been built on BairesDev's internal legacy framework, and I led a full refactor toward Clean Architecture so we could decouple from the internal framework one module at a time — without ever slowing feature delivery. As the project hired and grew, I moved over full-time and stepped up as Tech Lead.\n\nThe team grew to eight engineers: three back-end (myself included), two full-stack, one front-end, and two QA. I also took on most of the project-manager responsibilities alongside the tech-lead role for about six months, until a dedicated PM joined for the final four months of the project.\n\nThe piece-by-piece transition let the new team choose technologies that genuinely fit the project as we replaced each framework dependency, and we landed on a fully independent, scalable platform. I also formalized and documented every team process — ticket workflow, code review, release and deploy, hotfix and restore procedures — giving the team a stable operating manual as we scaled.",
       "projects": [],
       "stack": ["C#", ".NET 8", "Azure", "GitLab CI/CD", "Claude Code", "Cursor", "GitHub Copilot"]
     },
@@ -62,11 +62,11 @@
       "summary": "Promoted to Technical Lead within four months. Architected a new backend platform and an integrated automated-testing solution.",
       "highlights": [
         "Promoted to Technical Lead within 4 months of joining the Core Team.",
-        "Architected a new backend platform using DDD, CQRS, and Clean Architecture.",
+        "Drove DDD, CQRS, and Clean Architecture patterns across the Partnerships codebase.",
         "Designed and implemented an integrated automated-testing solution for the team.",
         "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
       ],
-      "details": "",
+      "details": "Joined the BairesDev Core team to work on Partnerships, a small project staffed with one Tech Lead, two back-end engineers (me included), one front-end engineer, and one QA. The codebase ran on BairesDev's internal framework, which presented several real challenges — the patterns I learned working through them later informed the decoupling work I led at IntrosMatter.\n\nAfter four months I was promoted to Tech Lead of the team and stayed on the project until the codebase reached a stable, maintainable state. Partnerships is still cited internally at BairesDev Core by developers as one of the cleanest and easiest-to-maintain projects in the portfolio.",
       "projects": [],
       "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture"]
     },
@@ -84,8 +84,12 @@
         "Implemented Infrastructure as Code and fully automated CI/CD pipelines.",
         "Owned feature design and delivery while championing DDD and Clean Architecture standards."
       ],
-      "details": "",
-      "projects": [],
+      "details": "My first long-term engagement after joining BairesDev. FoodX was a Vancouver startup serving a single anchor client — Carrefour Belgium — and together we designed, built, and went live with a full e-grocery platform: storage, order capture, fulfillment, and delivery all fully connected. I joined as a back-end developer and was promoted to Tech Lead within four months, owning three of the core services: Order Management, Smart Substitutions, and Intelligent Packaging.\n\nWorking alongside engineers who had come from Amazon and Microsoft, this was the project where I really developed my passion for back-end systems — event-driven architecture, message-bus patterns, and the operational realities of running production services at scale. The startup ultimately couldn't sustain itself past the two-year mark, but the technical depth I built there still shapes how I design systems today.",
+      "projects": [
+        { "name": "Order Management" },
+        { "name": "Smart Substitutions" },
+        { "name": "Intelligent Packaging" }
+      ],
       "stack": [".NET", "C#", "Azure Functions", "Azure Service Bus", "Azure Storage Queues", "IaC", "CI/CD"]
     },
     {
