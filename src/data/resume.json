@@ -49,7 +49,11 @@
         "Champion AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
       ],
       "details": "Joined IntrosMatter as a back-end contributor while still leading a BairesDev Partnerships team. The codebase had been built on BairesDev's internal legacy framework, and I led a full refactor toward Clean Architecture so we could decouple from the internal framework one module at a time — without ever slowing feature delivery. As the project hired and grew, I moved over full-time and stepped up as Tech Lead.\n\nThe team grew to eight engineers: three back-end (myself included), two full-stack, one front-end, and two QA. I also took on most of the project-manager responsibilities alongside the tech-lead role for about six months, until a dedicated PM joined for the final four months of the project.\n\nThe piece-by-piece transition let the new team choose technologies that genuinely fit the project as we replaced each framework dependency, and we landed on a fully independent, scalable platform. I also formalized and documented every team process — ticket workflow, code review, release and deploy, hotfix and restore procedures — giving the team a stable operating manual as we scaled.",
-      "projects": [],
+      "projects": [
+        { "name": "IntrosMatter" },
+        { "name": "Integrations" },
+        { "name": "Background Services" }
+      ],
       "stack": ["C#", ".NET 8", "Azure", "GitLab CI/CD", "Claude Code", "Cursor", "GitHub Copilot"]
     },
     {
@@ -67,7 +71,11 @@
         "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
       ],
       "details": "Joined the BairesDev Core team to work on Partnerships, a small project staffed with one Tech Lead, two back-end engineers (me included), one front-end engineer, and one QA. The codebase ran on BairesDev's internal framework, which presented several real challenges — the patterns I learned working through them later informed the decoupling work I led at IntrosMatter.\n\nAfter four months I was promoted to Tech Lead of the team and stayed on the project until the codebase reached a stable, maintainable state. Partnerships is still cited internally at BairesDev Core by developers as one of the cleanest and easiest-to-maintain projects in the portfolio.",
-      "projects": [],
+      "projects": [
+        { "name": "Partnerships" },
+        { "name": "Background Services" },
+        { "name": "Client Service" }
+      ],
       "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture"]
     },
     {
