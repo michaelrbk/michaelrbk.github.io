@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import resume from "../data/resume.json";
+
+const { basics, available } = resume;
+const githubProfile = basics.profiles.find((p) => p.network === "GitHub");
+const linkedInProfile = basics.profiles.find((p) => p.network === "LinkedIn");
+const location = `${basics.location.city}, ${basics.location.region}, ${basics.location.countryCode}`;
+---
+
+<Layout>
+  <main class="mx-auto flex min-h-full max-w-2xl flex-col justify-center gap-8 px-6 py-16">
+    {
+      available && (
+        <div class="inline-flex w-fit items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-700 dark:text-emerald-300">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+          </span>
+          Open to opportunities
+        </div>
+      )
+    }
+
+    <header class="flex flex-col gap-3">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">{basics.name}</h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400">{basics.label}</p>
+      <p class="text-sm text-slate-500 dark:text-slate-500">{location}</p>
+    </header>
+
+    <p class="text-base leading-relaxed text-slate-700 dark:text-slate-300">
+      {basics.summary}
+    </p>
+
+    <nav class="flex flex-wrap gap-3">
+      <a
+        href="/resume"
+        class="inline-flex items-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+      >
+        Resume
+      </a>
+      <a
+        href="/experience"
+        class="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800"
+      >
+        Experience
+      </a>
+      <a
+        href={`mailto:${basics.email}`}
+        class="inline-flex items-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800"
+      >
+        Contact
+      </a>
+    </nav>
+
+    <footer class="flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-500">
+      {
+        githubProfile?.url && (
+          <a href={githubProfile.url} class="hover:text-slate-900 dark:hover:text-slate-100">
+            GitHub
+          </a>
+        )
+      }
+      {
+        linkedInProfile?.url && (
+          <a href={linkedInProfile.url} class="hover:text-slate-900 dark:hover:text-slate-100">
+            LinkedIn
+          </a>
+        )
+      }
+      <a href={`mailto:${basics.email}`} class="hover:text-slate-900 dark:hover:text-slate-100">
+        {basics.email}
+      </a>
+    </footer>
+  </main>
+</Layout>

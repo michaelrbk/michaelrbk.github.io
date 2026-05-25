@@ -1,0 +1,279 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Michael Becker",
+    "label": "Senior Software Engineer · Tech Lead · .NET / Azure / Microservices",
+    "email": "michaelrbk@gmail.com",
+    "url": "https://michaelrbk.github.io",
+    "summary": "Tech Lead and Senior Software Engineer with 20+ years of experience designing and delivering enterprise software for international clients across the Americas and Europe. Specialist in .NET, Azure, and modern architectures (DDD, CQRS, Clean Architecture). Eager to build strong engineering teams and help developers grow. Passionate about coding, automation, simplicity, and shipping incremental, high-quality value.",
+    "location": {
+      "city": "Vitória",
+      "region": "ES",
+      "countryCode": "BR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "michaelrbk",
+        "url": "https://github.com/michaelrbk"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "available": true,
+  "work": [
+    {
+      "name": "IntrosMatter",
+      "location": "Delaware, USA (Remote)",
+      "url": "https://introsmatter.com",
+      "position": "Tech Lead / Software Engineer",
+      "startDate": "2024-12",
+      "endDate": null,
+      "summary": "Lead an 8-person engineering team — architecture, solution design, and engineering standards — while staying hands-on as a back-end contributor.",
+      "highlights": [
+        "Lead an 8-person engineering team, owning architecture, solution design, and engineering standards across projects.",
+        "Design new solutions end-to-end and stay involved through implementation as a hands-on back-end contributor.",
+        "Defined team processes and development best practices to drive code quality and delivery consistency.",
+        "Partner with DevOps to set up CI/CD pipelines; manage GitLab repositories and branching strategy.",
+        "Maintain the project documentation wiki to support onboarding and knowledge sharing.",
+        "Champion AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["C#", ".NET 8", "Azure", "GitLab CI/CD", "Claude Code", "Cursor", "GitHub Copilot"]
+    },
+    {
+      "name": "BairesDev — Core Team",
+      "location": "Buenos Aires, Argentina (Remote)",
+      "url": "https://www.bairesdev.com",
+      "position": "Technical Lead / Software Engineer",
+      "startDate": "2022-08",
+      "endDate": "2025-08",
+      "summary": "Promoted to Technical Lead within four months. Architected a new backend platform and an integrated automated-testing solution.",
+      "highlights": [
+        "Promoted to Technical Lead within 4 months of joining the Core Team.",
+        "Architected a new backend platform using DDD, CQRS, and Clean Architecture.",
+        "Designed and implemented an integrated automated-testing solution for the team.",
+        "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture"]
+    },
+    {
+      "name": "FoodX (via BairesDev)",
+      "location": "Vancouver, Canada (Remote)",
+      "url": "",
+      "position": "Team Lead / Software Engineer",
+      "startDate": "2020-12",
+      "endDate": "2022-08",
+      "summary": "Built event-driven microservices on Azure and owned feature design and delivery while championing DDD and Clean Architecture standards.",
+      "highlights": [
+        "Promoted to Team Lead within 4 months.",
+        "Built event-driven microservices on Azure (Functions, Service Bus, Storage Queues, non-relational storage).",
+        "Implemented Infrastructure as Code and fully automated CI/CD pipelines.",
+        "Owned feature design and delivery while championing DDD and Clean Architecture standards."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": [".NET", "C#", "Azure Functions", "Azure Service Bus", "Azure Storage Queues", "IaC", "CI/CD"]
+    },
+    {
+      "name": "Technos da Amazônia S/A",
+      "location": "Rio de Janeiro, Brazil",
+      "url": "",
+      "position": "Systems Specialist",
+      "startDate": "2018-08",
+      "endDate": "2020-12",
+      "summary": "Designed Protheus ERP customizations and integrations for finance, purchasing, billing, inventory, and tax compliance.",
+      "highlights": [
+        "Designed and developed Protheus ERP customizations (ADVPL) for finance, purchasing, and billing modules.",
+        "Built automated billing and consignment workflows; tuned MSSQL queries for performance.",
+        "Owned inventory/logistics integrations, version updates, and tax-compliance routines."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL"]
+    },
+    {
+      "name": "Ideias Tecnologia",
+      "location": "Rio de Janeiro, Brazil",
+      "url": "",
+      "position": "Senior Systems Analyst",
+      "startDate": "2014-06",
+      "endDate": "2018-07",
+      "summary": "Delivered on-site Protheus ERP solutions for several client companies and led multiple version-migration projects end-to-end.",
+      "highlights": [
+        "Delivered on-site Protheus ERP solutions for several client companies.",
+        "Led multiple Protheus version-migration projects end-to-end.",
+        "Introduced ERP development best practices, source control, and an internal approvals portal."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL"]
+    },
+    {
+      "name": "Distribuidora Record",
+      "location": "Rio de Janeiro, Brazil",
+      "url": "",
+      "position": "Systems Analyst",
+      "startDate": "2013-09",
+      "endDate": "2014-06",
+      "summary": "Customized Protheus ERP modules and maintained logistics and tax-compliance integrations.",
+      "highlights": [
+        "Customized Protheus ERP modules (finance, purchasing, billing) in ADVPL.",
+        "Automated billing and consignment processes; optimized MSSQL queries.",
+        "Maintained logistics and tax-compliance integrations."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL"]
+    },
+    {
+      "name": "Doctor Clin Operadora",
+      "location": "Novo Hamburgo, Brazil",
+      "url": "",
+      "position": "Systems Analyst",
+      "startDate": "2009-04",
+      "endDate": "2013-09",
+      "summary": "Customized the Protheus PLS health-insurance module and built Oracle-based management reports. Administered Linux servers and the corporate intranet.",
+      "highlights": [
+        "Customized the Protheus PLS (health-insurance) module in ADVPL.",
+        "Built Oracle-based management reports for operational decision-making.",
+        "Administered Linux servers and developed the corporate intranet (PHP, Drupal, MySQL).",
+        "Deployed and customized the GLPI ticketing system (PHP, MySQL)."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "Oracle", "PHP", "Drupal", "MySQL", "Linux"]
+    },
+    {
+      "name": "Back From The Future — Laptop Lab",
+      "location": "Dublin, Ireland",
+      "url": "",
+      "position": "Computer Technician",
+      "startDate": "2008-04",
+      "endDate": "2009-03",
+      "summary": "Promoted to lab manager within 3 months. Repaired and configured PC and Apple laptops in a high-volume workshop.",
+      "highlights": [
+        "Repaired and configured PC and Apple laptops in a high-volume workshop.",
+        "Promoted to lab manager within 3 months, leading a team of 4 technicians.",
+        "Handled English-speaking client communication for diagnostics, quotes, and pickups."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": []
+    },
+    {
+      "name": "PRD Tecnologia de Gestão",
+      "location": "Novo Hamburgo, Brazil",
+      "url": "",
+      "position": "Developer",
+      "startDate": "2006-05",
+      "endDate": "2008-03",
+      "summary": "Contributed to early-stage product development at a startup, including an ERP financial module and an end-to-end auctioneer management system.",
+      "highlights": [
+        "Contributed to early-stage product development at a startup.",
+        "Built an ERP financial module and an end-to-end auctioneer management system with an online bidding site.",
+        "Tech: xHarbour (Clipper), Java Servlets, iReport, PostgreSQL."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["xHarbour", "Clipper", "Java Servlets", "iReport", "PostgreSQL"]
+    },
+    {
+      "name": "Schmitt Materiais para Escritório",
+      "location": "Novo Hamburgo, Brazil",
+      "url": "",
+      "position": "Support Analyst",
+      "startDate": "2003-09",
+      "endDate": "2006-03",
+      "summary": "Co-managed the support team and the company hardware fleet, and developed internal systems in xHarbour with PostgreSQL.",
+      "highlights": [
+        "Co-managed the support team and the company hardware fleet.",
+        "Trained users on Linux and Windows environments.",
+        "Developed internal systems in xHarbour (Clipper) with PostgreSQL; administered Linux/Windows servers."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["xHarbour", "Clipper", "PostgreSQL", "Linux", "Windows Server"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Infnet",
+      "location": "Rio de Janeiro, Brazil",
+      "area": "Mobile Development",
+      "studyType": "Postgraduate Diploma (MIT)",
+      "startDate": "2014",
+      "endDate": "2017"
+    },
+    {
+      "institution": "Feevale University",
+      "location": "Novo Hamburgo, Brazil",
+      "area": "Computer Science",
+      "studyType": "B.Sc.",
+      "startDate": "2004",
+      "endDate": "2012"
+    },
+    {
+      "institution": "Santa Catarina School",
+      "location": "Novo Hamburgo, Brazil",
+      "area": "Computer Technician",
+      "studyType": "Vocational",
+      "startDate": "2001",
+      "endDate": "2003"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Architecture",
+      "keywords": ["DDD", "CQRS", "Clean Architecture", "Modular Monoliths", "Microservices", "Event-Driven Systems"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": ["Azure Functions", "Azure Service Bus", "Azure Storage", "AWS", "CI/CD", "Infrastructure as Code"]
+    },
+    {
+      "name": "AI Tooling",
+      "keywords": ["Claude Code", "Cursor", "GitHub Copilot", "AI-assisted development workflows"]
+    },
+    {
+      "name": "Languages",
+      "keywords": [".NET", ".NET Core", "C#", "Python", "Java", "PHP", "ADVPL", "JavaScript", "Go", "HTML/CSS"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["MSSQL", "MySQL", "Oracle", "PostgreSQL", "Azure non-relational storage"]
+    },
+    {
+      "name": "Practices",
+      "keywords": ["Agile / Scrum", "Automated Testing", "Code Quality", "Git", "SVN"]
+    },
+    {
+      "name": "Leadership",
+      "keywords": ["Team Management", "Mentoring", "Solution Design", "Standards Definition", "Business Analysis"]
+    }
+  ],
+  "languages": [
+    { "language": "Portuguese", "fluency": "Native" },
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Spanish", "fluency": "Conversational" },
+    { "language": "French", "fluency": "Basic" }
+  ],
+  "interests": [],
+  "publications": [
+    {
+      "name": "Pixel Arts Vectorization — Bachelor's Thesis",
+      "url": "https://github.com/michaelrbk/pixelart-vectorizer"
+    },
+    {
+      "name": "Open Source Portfolio — Android, iOS, Cordova, Ionic, .NET / .NET Core, Go",
+      "url": "https://github.com/michaelrbk"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import resume from "../data/resume.json";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { basics } = resume;
+const {
+  title = `${basics.name} — ${basics.label}`,
+  description = basics.summary,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="h-full bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+    <slot />
+  </body>
+</html>
