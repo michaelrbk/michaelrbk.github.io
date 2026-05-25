@@ -3,6 +3,7 @@
   "basics": {
     "name": "Michael Becker",
     "label": "Senior Software Engineer · Tech Lead · .NET / Azure / Microservices",
+    "image": "/avatar.jpg",
     "email": "michaelrbk@gmail.com",
     "url": "https://michaelrbk.github.io",
     "summary": "Tech Lead and Senior Software Engineer with 20+ years of experience designing and delivering enterprise software for international clients across the Americas and Europe. Specialist in .NET, Azure, and modern architectures (DDD, CQRS, Clean Architecture). Eager to build strong engineering teams and help developers grow. Passionate about coding, automation, simplicity, and shipping incremental, high-quality value.",
@@ -21,6 +22,11 @@
         "network": "LinkedIn",
         "username": "michael-rbecker",
         "url": "https://www.linkedin.com/in/michael-rbecker/"
+      },
+      {
+        "network": "Strava",
+        "username": "michaelrbk",
+        "url": "https://www.strava.com/athletes/michaelrbk"
       }
     ]
   },
