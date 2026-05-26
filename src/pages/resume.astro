@@ -6,6 +6,7 @@ const { basics, work, education, skills, languages, publications } = resume;
 const github = basics.profiles.find((p) => p.network === "GitHub");
 const linkedin = basics.profiles.find((p) => p.network === "LinkedIn");
 const location = `${basics.location.city}, ${basics.location.region}, ${basics.location.countryCode}`;
+const siteDisplay = basics.url?.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
 const MONTHS = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -34,7 +35,7 @@ function hostnameOf(url: string): string {
   <main class="mx-auto max-w-3xl px-6 py-12 print:max-w-none print:px-0 print:py-0">
     <header class="flex flex-wrap items-start justify-between gap-x-6 gap-y-4">
       <div class="min-w-0">
-        <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">{basics.name}</h1>
+        <h1 class="text-3xl font-bold tracking-tight text-accent dark:text-accent-light sm:text-4xl">{basics.name}</h1>
         <p class="mt-1 text-base text-slate-700 dark:text-slate-300">{basics.label}</p>
         <p class="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-600 dark:text-slate-400">
           <span>{location}</span>
@@ -54,6 +55,12 @@ function hostnameOf(url: string): string {
               <a href={linkedin.url} class="hover:text-slate-900 dark:hover:text-slate-100">LinkedIn</a>
             </>
           )}
+          {basics.url && (
+            <>
+              <span aria-hidden="true" class="text-slate-400 dark:text-slate-600">·</span>
+              <a href={basics.url} class="hover:text-slate-900 dark:hover:text-slate-100">{siteDisplay}</a>
+            </>
+          )}
         </p>
       </div>
       <a
@@ -65,7 +72,7 @@ function hostnameOf(url: string): string {
     </header>
 
     <section class="mt-10">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Professional summary
       </h2>
       <p class="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
@@ -74,21 +81,21 @@ function hostnameOf(url: string): string {
     </section>
 
     <section class="mt-8">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Core competencies
       </h2>
-      <dl class="mt-3 space-y-1.5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+      <dl class="mt-3 space-y-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
         {skills.map((skill) => (
-          <div class="flex flex-wrap gap-x-2">
-            <dt class="font-semibold text-slate-900 dark:text-slate-100">{skill.name}:</dt>
-            <dd>{skill.keywords.join(", ")}</dd>
+          <div>
+            <dt class="inline font-semibold text-slate-900 dark:text-slate-100">{skill.name}:</dt>{" "}
+            <dd class="inline">{skill.keywords.join(", ")}</dd>
           </div>
         ))}
       </dl>
     </section>
 
     <section class="mt-8">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Experience
       </h2>
       <div class="mt-4 space-y-6">
@@ -109,11 +116,6 @@ function hostnameOf(url: string): string {
               </span>
             </div>
             <p class="mt-0.5 text-sm italic text-slate-700 dark:text-slate-300">{job.position}</p>
-            {job.summary && (
-              <p class="mt-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-                {job.summary}
-              </p>
-            )}
             {job.highlights && job.highlights.length > 0 && (
               <ul class="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-slate-700 marker:text-slate-400 dark:text-slate-300 dark:marker:text-slate-600">
                 {job.highlights.map((h) => <li>{h}</li>)}
@@ -125,7 +127,7 @@ function hostnameOf(url: string): string {
     </section>
 
     <section class="mt-8">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Education
       </h2>
       <div class="mt-3 space-y-3">
@@ -147,7 +149,7 @@ function hostnameOf(url: string): string {
     </section>
 
     <section class="mt-8">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Publications & open source
       </h2>
       <ul class="mt-3 space-y-1.5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
@@ -171,7 +173,7 @@ function hostnameOf(url: string): string {
     </section>
 
     <section class="mt-8">
-      <h2 class="border-b border-slate-200 pb-1 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-slate-800 dark:text-slate-400">
+      <h2 class="border-b border-slate-300 pb-1 text-sm font-bold uppercase tracking-widest text-accent dark:border-slate-700 dark:text-accent-light">
         Languages
       </h2>
       <p class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-700 dark:text-slate-300">
@@ -188,3 +190,9 @@ function hostnameOf(url: string): string {
     </section>
   </main>
 </Layout>
+
+<style is:global>
+  html {
+    font-size: 13px;
+  }
+</style>

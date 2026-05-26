@@ -3,6 +3,9 @@
 @theme {
   --font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-accent: #1f4e78;
+  --color-accent-light: #93c5fd;
 }
 
 @layer base {

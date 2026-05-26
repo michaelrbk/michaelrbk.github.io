@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Michael Becker",
-    "label": "Senior Software Engineer · Tech Lead · .NET / Azure / Microservices",
+    "label": "Senior Software Engineer · Tech Lead · .NET / Backend Systems",
     "image": "/avatar.jpg",
     "email": "michaelrbk@gmail.com",
     "url": "https://michaelrbk.github.io",
