@@ -1,43 +1,52 @@
-# Astro Starter Kit: Minimal
+# michaelrbk.github.io
+
+A centralized place for my professional presence — a personal webpage that doubles as my CV. One source of truth for resume content, served as a website and exported as a PDF.
+
+Live at **[michaelrbk.github.io](https://michaelrbk.github.io/)**.
+
+Built collaboratively with [Claude Code](https://claude.com/claude-code) (Opus 4.7).
+
+## Pages
+
+- `/` — landing
+- `/resume` — full resume (also the source for the PDF)
+- `/experience` — role-by-role narrative with logos
+- `/cv.pdf` — generated from `/resume` at build time
+
+## Stack
+
+- [Astro 6](https://astro.build/) — static site generator
+- [Tailwind CSS 4](https://tailwindcss.com/) — styling via `@tailwindcss/vite`
+- [Playwright](https://playwright.dev/) — headless Chromium for PDF generation
+- Node.js 22
+- GitHub Pages + GitHub Actions for hosting and CI
+
+## Run locally
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev       # dev server at http://localhost:4321
+npm run build     # production build to ./dist/
+npm run preview   # serve the built site locally
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Generate the PDF locally
 
-## 🚀 Project Structure
+The PDF is rendered by booting `astro preview`, navigating headless Chromium to `/resume`, and printing it to `dist/cv.pdf`.
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm run build
+npx playwright install chromium   # first time only
+npm run pdf
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The output lands at `dist/cv.pdf` and is shipped as `/cv.pdf` on the live site.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## How deploy works
 
-Any static assets, like images, can be placed in the `public/` directory.
+`.github/workflows/deploy.yml` runs on every push to `main` (and via manual `workflow_dispatch`):
 
-## 🧞 Commands
+1. **build** — checks out the repo, installs Node 22 + dependencies, installs Playwright Chromium, runs `npm run build`, then `npm run pdf` to drop `cv.pdf` into `dist/`, and uploads `dist/` as a Pages artifact.
+2. **deploy** — publishes the artifact to the `github-pages` environment.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Concurrency is grouped on `pages` so overlapping pushes don't trample each other.
