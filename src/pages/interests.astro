@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import resume from "../data/resume.json";
+
+const { basics } = resume;
+---
+
+<Layout title={`${basics.name} — Interests`}>
+  <main class="mx-auto max-w-2xl px-6 py-12">
+    <nav class="mb-6 text-sm text-slate-500 dark:text-slate-400">
+      <a href="/" class="transition hover:text-slate-900 dark:hover:text-slate-100">← Home</a>
+    </nav>
+
+    <header>
+      <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Interests</h1>
+      <p class="mt-3 max-w-prose text-base leading-relaxed text-slate-700 dark:text-slate-300">
+        Things I do when I'm not coding — mostly excuses to share time with people,
+        and the occasional rabbit hole I follow alone.
+      </p>
+    </header>
+
+    <div class="mt-10 space-y-8">
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">Running</h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          I run to clear my head and stay consistent more than to chase PRs.
+          The kilometres show up on
+          {" "}<a
+            href="https://www.strava.com/athletes/michaelrbk"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >Strava</a>{" "}
+          if you're curious.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">Reading</h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          Currently working through Cormac McCarthy's <em>Blood Meridian</em>.
+          Bernard Cornwell anchors the historical-fiction side — I've followed
+          his Saxon Stories all the way to volume 13, plus the Arthurian and
+          Sharpe arcs. Sci-fi fills the other half: Le Guin, Gibson, Bradbury,
+          the Strugatskys, and the occasional contemporary like Andy Weir.
+          Brazilian literature shows up regularly too — Machado de Assis,
+          Itamar Vieira Junior.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">Graphic novels</h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          Comics share equal shelf space with prose, and I tend toward the
+          literary, international end of the spectrum. Standouts: Spiegelman's
+          <em>Maus</em>, Satrapi's <em>Persépolis</em>, Oesterheld &amp; Solano
+          López's <em>O Eternauta</em>, Gaiman's <em>Sandman</em>, Gabriel Bá's
+          <em>Two Brothers</em>, and Chaboute's <em>Alone</em>.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">
+          PC coop with friends
+        </h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          Deep Rock Galactic and Hunt: Showdown are the regular rotation —
+          I'm in it for the squad more than the genre. Rock and Stone. Library on
+          {" "}<a
+            href="https://steamcommunity.com/id/michaelrbk/"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >Steam</a>.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">
+          Board games &amp; Arkham Horror LCG
+        </h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          I'll try almost any board game, but the Arkham Horror Card Game is the
+          obsession — long-running campaigns where the story actually remembers
+          what you did. Collection on
+          {" "}<a
+            href="https://boardgamegeek.com/profile/michaelrbk"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >BoardGameGeek</a>.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">Chess</h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          Comes and goes in waves — when I want a different kind of puzzle
+          from code. Mostly online on
+          {" "}<a
+            href="https://www.chess.com/member/michaelrbk"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >chess.com</a>.
+        </p>
+      </article>
+
+      <article class="border-l-2 border-slate-200 pl-5 dark:border-slate-800">
+        <h2 class="text-base font-semibold text-slate-900 dark:text-slate-100">
+          Retro &amp; fantasy console coding
+        </h2>
+        <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          Grew up with retro games and still keep coming back to them. Lately
+          that means making tiny things on
+          {" "}<a
+            href="https://tic80.com/"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >TIC-80</a>{" "}
+          — here's a
+          {" "}<a
+            href="https://github.com/michaelrbk/tic_snake"
+            class="underline decoration-slate-400 underline-offset-4 transition hover:decoration-slate-900 dark:hover:decoration-slate-100"
+          >Snake clone</a>{" "}
+          I wrote in Lua.
+        </p>
+      </article>
+    </div>
+  </main>
+</Layout>
