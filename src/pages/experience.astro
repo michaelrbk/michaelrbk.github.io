@@ -22,15 +22,6 @@ function formatRange(start: string, end: string | null | undefined): string {
   return `${formatMonthYear(start)} – ${formatMonthYear(end)}`;
 }
 
-function domainFromUrl(url: string | null | undefined): string | null {
-  if (!url) return null;
-  try {
-    return new URL(url).hostname.replace(/^www\./, "");
-  } catch {
-    return null;
-  }
-}
-
 function monogramOf(name: string): string {
   return name.trim().charAt(0).toUpperCase();
 }
@@ -52,15 +43,14 @@ function monogramOf(name: string): string {
     <div class="mt-10 space-y-10">
       {
         work.map((job) => {
-          const domain = domainFromUrl(job.url);
           const monogram = monogramOf(job.name);
           return (
             <article class="flex flex-col gap-4 sm:flex-row sm:gap-5">
               <div class="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-md bg-slate-100 text-base font-semibold text-slate-500 dark:bg-slate-800 dark:text-slate-400">
                 <span aria-hidden="true">{monogram}</span>
-                {domain && (
+                {job.logo && (
                   <img
-                    src={`https://logo.clearbit.com/${domain}`}
+                    src={job.logo}
                     alt=""
                     loading="lazy"
                     decoding="async"
