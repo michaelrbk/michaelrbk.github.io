@@ -44,9 +44,9 @@
         "Lead an 8-person engineering team, owning architecture, solution design, and engineering standards across projects.",
         "Design new solutions end-to-end and stay involved through implementation as a hands-on back-end contributor.",
         "Defined team processes and development best practices to drive code quality and delivery consistency.",
-        "Partner with DevOps to set up CI/CD pipelines; manage GitLab repositories and branching strategy.",
         "Maintain the project documentation wiki to support onboarding and knowledge sharing.",
-        "Champion AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
+        "Partner with DevOps to set up CI/CD pipelines; manage GitLab repositories and branching strategy.",
+        "AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
       ],
       "details": "Joined IntrosMatter as a back-end contributor while still leading a BairesDev Partnerships team. The codebase had been built on BairesDev's internal legacy framework, and I led a full refactor toward Clean Architecture so we could decouple from the internal framework one module at a time — without ever slowing feature delivery. As the project hired and grew, I moved over full-time and stepped up as Tech Lead.\n\nThe team grew to eight engineers: three back-end (myself included), two full-stack, one front-end, and two QA. I also took on most of the project-manager responsibilities alongside the tech-lead role for about six months, until a dedicated PM joined for the final four months of the project.\n\nThe piece-by-piece transition let the new team choose technologies that genuinely fit the project as we replaced each framework dependency, and we landed on a fully independent, scalable platform. I also formalized and documented every team process — ticket workflow, code review, release and deploy, hotfix and restore procedures — giving the team a stable operating manual as we scaled.",
       "projects": [
@@ -54,7 +54,7 @@
         { "name": "Integrations" },
         { "name": "Background Services" }
       ],
-      "stack": ["C#", ".NET 8", "Azure", "GitLab CI/CD", "Claude Code", "Cursor", "GitHub Copilot"]
+      "stack": ["C#", ".NET", "MSSQL", "AWS", "GitLab","Octopus Deploy", "Claude Code", "Cursor", "GitHub Copilot", "Angular", "Playwright", "DDD", "CQRS", "Clean Architecture"]
     },
     {
       "name": "BairesDev — Core Team",
@@ -76,12 +76,12 @@
         { "name": "Background Services" },
         { "name": "Client Service" }
       ],
-      "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture"]
+      "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture","Octopus Deploy", "Jenkins"]
     },
     {
       "name": "FoodX (via BairesDev)",
       "location": "Vancouver, Canada (Remote)",
-      "url": "",
+      "url": "https://techcouver.com/tag/food-x-technologies/",
       "position": "Team Lead / Software Engineer",
       "startDate": "2020-12",
       "endDate": "2022-08",
@@ -98,12 +98,12 @@
         { "name": "Smart Substitutions" },
         { "name": "Intelligent Packaging" }
       ],
-      "stack": [".NET", "C#", "Azure Functions", "Azure Service Bus", "Azure Storage Queues", "IaC", "CI/CD"]
+      "stack": [".NET", "C#", "Azure DevOps","Azure Functions", "Azure Service Bus", "Azure Storage Queues", "IaC", "CI/CD", "DDD", "Clean Architecture"]
     },
     {
       "name": "Technos da Amazônia S/A",
       "location": "Rio de Janeiro, Brazil",
-      "url": "",
+      "url": "https://www.technos.com.br",
       "position": "Systems Specialist",
       "startDate": "2018-08",
       "endDate": "2020-12",
@@ -115,12 +115,12 @@
       ],
       "details": "",
       "projects": [],
-      "stack": ["ADVPL", "Protheus", "MSSQL"]
+      "stack": ["ADVPL", "Protheus", "MSSQL",".NET", "C#"]
     },
     {
       "name": "Ideias Tecnologia",
       "location": "Rio de Janeiro, Brazil",
-      "url": "",
+      "url": "https://ideiastecnologia.com.br",
       "position": "Senior Systems Analyst",
       "startDate": "2014-06",
       "endDate": "2018-07",
@@ -137,7 +137,7 @@
     {
       "name": "Distribuidora Record",
       "location": "Rio de Janeiro, Brazil",
-      "url": "",
+      "url": "https://www.record.com.br",
       "position": "Systems Analyst",
       "startDate": "2013-09",
       "endDate": "2014-06",
@@ -154,7 +154,7 @@
     {
       "name": "Doctor Clin Operadora",
       "location": "Novo Hamburgo, Brazil",
-      "url": "",
+      "url": "https://www.doctorclin.com.br",
       "position": "Systems Analyst",
       "startDate": "2009-04",
       "endDate": "2013-09",
@@ -172,7 +172,7 @@
     {
       "name": "Back From The Future — Laptop Lab",
       "location": "Dublin, Ireland",
-      "url": "",
+      "url": "https://backfromthefuture.ie",
       "position": "Computer Technician",
       "startDate": "2008-04",
       "endDate": "2009-03",
@@ -189,7 +189,7 @@
     {
       "name": "PRD Tecnologia de Gestão",
       "location": "Novo Hamburgo, Brazil",
-      "url": "",
+      "url": "https://www.eligo.com.br",
       "position": "Developer",
       "startDate": "2006-05",
       "endDate": "2008-03",
@@ -234,7 +234,7 @@
       "institution": "Feevale University",
       "location": "Novo Hamburgo, Brazil",
       "area": "Computer Science",
-      "studyType": "B.Sc.",
+      "studyType": "Bachelor of Science",
       "startDate": "2004",
       "endDate": "2012"
     },
