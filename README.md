@@ -10,7 +10,8 @@ Built collaboratively with [Claude Code](https://claude.com/claude-code) (Opus 4
 
 - `/` — landing
 - `/resume` — full resume (also the source for the PDF)
-- `/experience` — role-by-role narrative with logos
+- `/experience` — role-by-role narrative
+- `/interests` — the non-working side: running, reading, gaming, chess, fantasy console hacking
 - `/cv.pdf` — generated from `/resume` at build time
 
 ## Stack
