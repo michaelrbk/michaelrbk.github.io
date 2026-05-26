@@ -63,7 +63,7 @@
       "position": "Technical Lead / Software Engineer",
       "startDate": "2022-08",
       "endDate": "2025-08",
-      "summary": "Promoted to Technical Lead within four months. Architected a new backend platform and an integrated automated-testing solution.",
+      "summary": "Promoted to Technical Lead within four months. Architected a new backend architecture and an integrated automated-testing solution.",
       "highlights": [
         "Promoted to Technical Lead within 4 months of joining the Core Team.",
         "Drove DDD, CQRS, and Clean Architecture patterns across the Partnerships codebase.",
@@ -85,12 +85,13 @@
       "position": "Team Lead / Software Engineer",
       "startDate": "2020-12",
       "endDate": "2022-08",
-      "summary": "Built event-driven microservices on Azure and owned feature design and delivery while championing DDD and Clean Architecture standards.",
+      "summary": "Built event-driven microservices on Azure and owned feature design and delivery with DDD and Clean Architecture standards.",
       "highlights": [
         "Promoted to Team Lead within 4 months.",
         "Built event-driven microservices on Azure (Functions, Service Bus, Storage Queues, non-relational storage).",
-        "Implemented Infrastructure as Code and fully automated CI/CD pipelines.",
-        "Owned feature design and delivery while championing DDD and Clean Architecture standards."
+        "Lead 3 core services and owned feature design and delivery for them.",
+        "Implemented projects with Infrastructure as Code and fully automated CI/CD pipelines.",
+        "Owned feature design and delivery with DDD and Clean Architecture standards."
       ],
       "details": "My first long-term engagement after joining BairesDev. FoodX was a Vancouver startup serving a single anchor client — Carrefour Belgium — and together we designed, built, and went live with a full e-grocery platform: storage, order capture, fulfillment, and delivery all fully connected. I joined as a back-end developer and was promoted to Tech Lead within four months, owning three of the core services: Order Management, Smart Substitutions, and Intelligent Packaging.\n\nWorking alongside engineers who had come from Amazon and Microsoft, this was the project where I really developed my passion for back-end systems — event-driven architecture, message-bus patterns, and the operational realities of running production services at scale. The startup ultimately couldn't sustain itself past the two-year mark, but the technical depth I built there still shapes how I design systems today.",
       "projects": [
@@ -124,11 +125,11 @@
       "position": "Senior Systems Analyst",
       "startDate": "2014-06",
       "endDate": "2018-07",
-      "summary": "Delivered on-site Protheus ERP solutions for several client companies and led multiple version-migration projects end-to-end.",
+      "summary": "Delivered on-site Protheus ERP customizations solutions for several client companies and led multiple version-migration projects end-to-end.",
       "highlights": [
-        "Delivered on-site Protheus ERP solutions for several client companies.",
+        "Delivered on-site Protheus ERP customizations for several client companies.",
         "Led multiple Protheus version-migration projects end-to-end.",
-        "Introduced ERP development best practices, source control, and an internal approvals portal."
+        "Introduced on several clients ERP development best practices, source control, and an internal approvals."
       ],
       "details": "",
       "projects": [],
