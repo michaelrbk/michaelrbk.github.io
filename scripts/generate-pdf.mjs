@@ -3,7 +3,7 @@ import { chromium } from "playwright";
 
 const PORT = Number(process.env.PREVIEW_PORT ?? 4321);
 const RESUME_PATH = "/resume";
-const OUT_PATH = "dist/cv.pdf";
+const OUT_PATH = "dist/michael_becker_cv.pdf";
 
 const version = (() => {
   const d = new Date();

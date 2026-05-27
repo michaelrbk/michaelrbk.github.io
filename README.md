@@ -12,7 +12,7 @@ Built collaboratively with [Claude Code](https://claude.com/claude-code) (Opus 4
 - `/resume` — full resume (also the source for the PDF)
 - `/experience` — role-by-role narrative
 - `/interests` — the non-working side: running, reading, gaming, chess, fantasy console hacking
-- `/cv.pdf` — generated from `/resume` at build time
+- `/michael_becker_cv.pdf` — generated from `/resume` at build time
 
 ## Stack
 
@@ -33,7 +33,7 @@ npm run preview   # serve the built site locally
 
 ## Generate the PDF locally
 
-The PDF is rendered by booting `astro preview`, navigating headless Chromium to `/resume`, and printing it to `dist/cv.pdf`.
+The PDF is rendered by booting `astro preview`, navigating headless Chromium to `/resume`, and printing it to `dist/michael_becker_cv.pdf`.
 
 ```sh
 npm run build
@@ -41,13 +41,13 @@ npx playwright install chromium   # first time only
 npm run pdf
 ```
 
-The output lands at `dist/cv.pdf` and is shipped as `/cv.pdf` on the live site.
+The output lands at `dist/michael_becker_cv.pdf` and is shipped as `/michael_becker_cv.pdf` on the live site.
 
 ## How deploy works
 
 `.github/workflows/deploy.yml` runs on every push to `main` (and via manual `workflow_dispatch`):
 
-1. **build** — checks out the repo, installs Node 22 + dependencies, installs Playwright Chromium, runs `npm run build`, then `npm run pdf` to drop `cv.pdf` into `dist/`, and uploads `dist/` as a Pages artifact.
+1. **build** — checks out the repo, installs Node 22 + dependencies, installs Playwright Chromium, runs `npm run build`, then `npm run pdf` to drop `michael_becker_cv.pdf` into `dist/`, and uploads `dist/` as a Pages artifact.
 2. **deploy** — publishes the artifact to the `github-pages` environment.
 
 Concurrency is grouped on `pages` so overlapping pushes don't trample each other.

@@ -39,7 +39,7 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Generate cv.pdf
+      - name: Generate michael_becker_cv.pdf
         run: npm run pdf
 
       - name: Upload artifact
