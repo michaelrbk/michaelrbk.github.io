@@ -1,5 +1,8 @@
 # build output
 dist/
+
+# generated PDFs
+public/michael_becker_cv*.pdf
 # generated types
 .astro/
 

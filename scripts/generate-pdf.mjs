@@ -1,3 +1,4 @@
+import { copyFileSync, mkdirSync } from "node:fs";
 import { preview } from "astro";
 import { chromium } from "playwright";
 
@@ -43,6 +44,10 @@ async function main() {
       });
 
       await page.close();
+
+      const pub = resume.out.replace(/^dist\//, "public/");
+      mkdirSync("public", { recursive: true });
+      copyFileSync(resume.out, pub);
       console.log(`Wrote ${resume.out} (${version})`);
     }
 
