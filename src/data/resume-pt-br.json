@@ -6,7 +6,7 @@
     "image": "/avatar.jpg",
     "email": "michaelrbk@gmail.com",
     "url": "https://michaelrbk.github.io",
-    "summary": "Tech Lead e Engenheiro de Software Sênior com mais de 20 anos de experiência projetando e entregando software empresarial para clientes internacionais nas Américas e Europa. Especialista em .NET, Sistemas Backend e arquiteturas modernas (DDD, CQRS, Clean Architecture). Motivado em construir equipes e sistemas de engenharia sólidos e ajudar desenvolvedores a crescer. Apaixonado por programação, automação, simplicidade e entrega incremental de valor com qualidade.",
+    "summary": "Tech Lead e Engenheiro de Software Sênior com mais de 20 anos de experiência projetando e entregando software para clientes internacionais nas Américas e Europa. Especialista em .NET, Sistemas Backend e arquiteturas modernas (DDD, CQRS, Clean Architecture). Motivado em construir equipes e sistemas sólidos e ajudar desenvolvedores a crescer. Apaixonado por programação, automação, simplicidade e entrega incremental de valor com qualidade.",
     "location": {
       "city": "Vitória",
       "region": "ES",
@@ -45,7 +45,7 @@
         "TechLead um time de 8 engenheiros, definindo arquitetura, design de soluções e padrões de engenharia.",
         "Design de soluções end-to-end e acompanhamento e contribuição no backend.",
         "Defini processos e melhores práticas de desenvolvimento para garantir qualidade e consistência nas entregas.",
-        "Mantenho a documentação do projeto para apoiar a integração de novos membros e o compartilhamento de conhecimento.",
+        "Mantive a documentação do projeto para apoiar a integração de novos membros e o compartilhamento de conhecimento.",
         "Colaborei com DevOps na configuração de pipelines CI/CD; Realizei o gerenciamento dos repositórios GitLab e estratégias de branching.",
         "Desenvolvimento assistido por IA (Claude Code, Cursor, GitHub Copilot) — definindo práticas para uso eficaz em toda a equipe."
       ],
@@ -72,7 +72,7 @@
         "Projetei e implementei uma solução integrada de testes automatizados para o time.",
         "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
       ],
-      "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto pequeno com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O código rodava sobre o framework interno da BairesDev, que apresentava diversos desafios relacionamos ao framework interno — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
+      "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto pequeno com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O código rodava sobre o framework interno da BairesDev, que apresentava diversos desafios relacionamos — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
       "projects": [
         { "name": "Partnerships" },
         { "name": "BackgroundServices" },
