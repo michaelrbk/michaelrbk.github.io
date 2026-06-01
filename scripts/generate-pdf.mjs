@@ -2,8 +2,11 @@ import { preview } from "astro";
 import { chromium } from "playwright";
 
 const PORT = Number(process.env.PREVIEW_PORT ?? 4321);
-const RESUME_PATH = "/resume";
-const OUT_PATH = "dist/michael_becker_cv.pdf";
+
+const RESUMES = [
+  { path: "/resume", out: "dist/michael_becker_cv.pdf", label: "Michael Becker — Resume" },
+  { path: "/resume-pt-br", out: "dist/michael_becker_cv_pt_br.pdf", label: "Michael Becker — Currículo" },
+];
 
 const version = (() => {
   const d = new Date();
@@ -18,27 +21,32 @@ async function main() {
     logLevel: "warn",
   });
 
-  const url = `http://localhost:${PORT}${RESUME_PATH}`;
-  console.log(`Preview ready. Rendering ${url} → ${OUT_PATH}…`);
-
   try {
     const browser = await chromium.launch();
-    const page = await browser.newPage();
-    await page.goto(url, { waitUntil: "networkidle" });
-    await page.evaluate(() => document.fonts.ready);
 
-    await page.pdf({
-      path: OUT_PATH,
-      format: "A4",
-      margin: { top: "20mm", right: "20mm", bottom: "20mm", left: "20mm" },
-      printBackground: true,
-      displayHeaderFooter: true,
-      headerTemplate: "<div></div>",
-      footerTemplate: `<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 8px; color: #94a3b8; width: 100%; padding: 0 20mm; display: flex; justify-content: space-between;"><span>Michael Becker — Resume</span><span>${version}</span></div>`,
-    });
+    for (const resume of RESUMES) {
+      const url = `http://localhost:${PORT}${resume.path}`;
+      console.log(`Rendering ${url} → ${resume.out}…`);
+
+      const page = await browser.newPage();
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.evaluate(() => document.fonts.ready);
+
+      await page.pdf({
+        path: resume.out,
+        format: "A4",
+        margin: { top: "20mm", right: "20mm", bottom: "20mm", left: "20mm" },
+        printBackground: true,
+        displayHeaderFooter: true,
+        headerTemplate: "<div></div>",
+        footerTemplate: `<div style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 8px; color: #94a3b8; width: 100%; padding: 0 20mm; display: flex; justify-content: space-between;"><span>${resume.label}</span><span>${version}</span></div>`,
+      });
+
+      await page.close();
+      console.log(`Wrote ${resume.out} (${version})`);
+    }
 
     await browser.close();
-    console.log(`Wrote ${OUT_PATH} (${version})`);
   } finally {
     await server.stop();
   }

@@ -1,0 +1,310 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Michael Becker",
+    "label": "Engenheiro de Software Sênior · Tech Lead · .NET / Sistemas Backend",
+    "image": "/avatar.jpg",
+    "email": "michaelrbk@gmail.com",
+    "url": "https://michaelrbk.github.io",
+    "summary": "Tech Lead e Engenheiro de Software Sênior com mais de 20 anos de experiência projetando e entregando software empresarial para clientes internacionais nas Américas e Europa. Especialista em .NET, Sistemas Backend e arquiteturas modernas (DDD, CQRS, Clean Architecture). Motivado em construir equipes e sistemas de engenharia sólidos e ajudar desenvolvedores a crescer. Apaixonado por programação, automação, simplicidade e entrega incremental de valor com qualidade.",
+    "location": {
+      "city": "Vitória",
+      "region": "ES",
+      "countryCode": "BR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "michaelrbk",
+        "url": "https://github.com/michaelrbk"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "michael-rbecker",
+        "url": "https://www.linkedin.com/in/michael-rbecker/"
+      },
+      {
+        "network": "Strava",
+        "username": "michaelrbk",
+        "url": "https://www.strava.com/athletes/michaelrbk"
+      }
+    ]
+  },
+  "available": true,
+  "work": [
+    {
+      "name": "IntrosMatter",
+      "location": "Delaware, EUA (Remoto)",
+      "url": "https://introsmatter.com",
+      "logo": "/logos/introsmatter.png",
+      "position": "Tech Lead / Engenheiro de Software",
+      "startDate": "2024-12",
+      "endDate": null,
+      "summary": "TechLead um time de 8 engenheiros — arquitetura, design de soluções e padrões de engenharia — atuando também como desenvolver backend.",
+      "highlights": [
+        "TechLead um time de 8 engenheiros, definindo arquitetura, design de soluções e padrões de engenharia.",
+        "Design de soluções end-to-end e acompanhamento e contribuição no backend.",
+        "Defini processos e melhores práticas de desenvolvimento para garantir qualidade e consistência nas entregas.",
+        "Mantenho a documentação do projeto para apoiar a integração de novos membros e o compartilhamento de conhecimento.",
+        "Colaborei com DevOps na configuração de pipelines CI/CD; Realizei o gerenciamento dos repositórios GitLab e estratégias de branching.",
+        "Desenvolvimento assistido por IA (Claude Code, Cursor, GitHub Copilot) — definindo práticas para uso eficaz em toda a equipe."
+      ],
+      "details": "Entrei na IntrosMatter como desenvolvedor backend enquanto ainda liderava um time na BairesDev. O código foi construído sobre o framework legado interno da BairesDev, e liderei uma refatoração completa para Clean Architecture para desacoplar do framework interno um módulo de cada vez — sem nunca atrasar as entregas. Com o crescimento do projeto, migrei para dedicação exclusiva e assumi como Tech Lead.\n\nO time cresceu para oito engenheiros: três backend (eu incluso), dois full-stack, um frontend e dois QA. Também assumi a maior parte das responsabilidades de gerente de projeto junto com a liderança técnica por cerca de seis meses, até que um PM dedicado se juntou ao projeto nos últimos quatro meses.\n\nA transição gradual permitiu que o novo time escolhesse tecnologias adequadas ao substituir cada dependência do framework, resultando em uma plataforma totalmente independente e escalável. Também formalizei e documentei todos os processos do time — fluxo de tickets, code review, release e deploy, procedimentos de hotfix e restore — proporcionando um manual operacional estável.",
+      "projects": [
+        { "name": "IntrosMatter" },
+        { "name": "Integrações" },
+        { "name": "Background Services" }
+      ],
+      "stack": ["C#", ".NET", "MSSQL", "AWS", "GitLab","Octopus Deploy", "Claude Code", "Cursor", "GitHub Copilot", "Angular", "Playwright", "DDD", "CQRS", "Clean Architecture"]
+    },
+    {
+      "name": "BairesDev — Core Team",
+      "location": "Buenos Aires, Argentina (Remoto)",
+      "url": "https://www.bairesdev.com",
+      "logo": "/logos/bairesdev.png",
+      "position": "Tech Lead / Engenheiro de Software",
+      "startDate": "2022-08",
+      "endDate": "2025-08",
+      "summary": "Promovido a Tech Lead em quatro meses. Projetei uma nova arquitetura backend e uma solução integrada de testes automatizados.",
+      "highlights": [
+        "Promovido a Tech Leading em 4 meses após entrar no Core Team.",
+        "Implementei padrões DDD, CQRS e Clean Architecture no código do Projeto Partnerships.",
+        "Projetei e implementei uma solução integrada de testes automatizados para o time.",
+        "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
+      ],
+      "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto pequeno com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O código rodava sobre o framework interno da BairesDev, que apresentava diversos desafios relacionamos ao framework interno — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
+      "projects": [
+        { "name": "Partnerships" },
+        { "name": "BackgroundServices" },
+        { "name": "Client Service" }
+      ],
+      "stack": [".NET", "C#", "AWS", "GitLab CI/CD", "MSSQL", "DDD", "CQRS", "Clean Architecture","Octopus Deploy", "Jenkins"]
+    },
+    {
+      "name": "FoodX (via BairesDev)",
+      "location": "Vancouver, Canadá (Remoto)",
+      "url": "https://techcouver.com/tag/food-x-technologies/",
+      "logo": "/logos/foodx.jpg",
+      "position": "Team Lead / Engenheiro de Software",
+      "startDate": "2020-12",
+      "endDate": "2022-08",
+      "summary": "Construção de microsserviços orientados a eventos no Azure e liderança, design e entrega de funcionalidades com padrões DDD e Clean Architecture.",
+      "highlights": [
+        "Promovido a Team Lead em 4 meses.",
+        "Construí microsserviços orientados a eventos no Azure (Functions, Service Bus, Storage Queues, armazenamento não relacional).",
+        "Liderei 3 serviços core e fui responsável pelo design e entrega de funcionalidades.",
+        "Implementei projetos com Infrastructure as Code e pipelines CI/CD totalmente automatizados.",
+        "Projetei e entreguei funcionalidades com padrões DDD e Clean Architecture."
+      ],
+      "details": "Meu primeiro projeto de longo prazo após entrar na BairesDev. FoodX era uma startup de Vancouver atendendo um cliente âncora — Carrefour Bélgica — e juntos projetamos, construímos e colocamos em produção uma plataforma completa de e-grocery: armazenamento, captura de pedidos, separação e entrega totalmente integrados. Entrei como desenvolvedor backend e fui promovido a Tech Lead em quatro meses, assumindo três serviços core: Gerenciamento de Pedidos, Substituições Inteligentes e Embalagem Inteligente.\n\nTrabalhando ao lado de engenheiros que vieram da Amazon e Microsoft, este foi o projeto onde realmente desenvolvi minha paixão por sistemas backend — arquitetura orientada a eventos, padrões de message bus e as realidades operacionais de executar serviços em produção em escala. A startup não conseguiu se sustentar após dois anos, mas a profundidade técnica que adquiri ainda molda como projeto sistemas hoje.",
+      "projects": [
+        { "name": "Order Management" },
+        { "name": "Smart Substitutions" },
+        { "name": "Intelligent Packaging" }
+      ],
+      "stack": [".NET", "C#", "Azure DevOps","Azure Functions", "Azure Service Bus", "Azure Storage Queues", "IaC", "CI/CD", "DDD", "Clean Architecture"]
+    },
+    {
+      "name": "Technos da Amazônia S/A",
+      "location": "Rio de Janeiro, Brasil",
+      "url": "https://www.technos.com.br",
+      "logo": "/logos/technos.png",
+      "position": "Especialista em Sistemas",
+      "startDate": "2018-08",
+      "endDate": "2020-12",
+      "summary": "Projetei customizações e integrações do ERP Protheus para os módulos financeiro, compras, faturamento, estoque e fiscal.",
+      "highlights": [
+        "Projetei e desenvolvi customizações do ERP Protheus (ADVPL) para os módulos financeiro, compras e faturamento.",
+        "Construí processos automatizados de faturamento e consignação; otimizei consultas MSSQL para performance.",
+        "Gerenciei integrações de estoque/logística, atualizações de versão e rotinas fiscais."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL",".NET", "C#"]
+    },
+    {
+      "name": "Ideias Tecnologia",
+      "location": "Rio de Janeiro, Brasil",
+      "url": "https://ideiastecnologia.com.br",
+      "logo": "/logos/ideiastecnologia.png",
+      "position": "Analista de Sistemas Sênior",
+      "startDate": "2014-06",
+      "endDate": "2018-07",
+      "summary": "Entreguei soluções de customização do ERP Protheus para diversas empresas clientes e liderei projetos de migração de versão do início ao fim.",
+      "highlights": [
+        "Entreguei customizações do ERP Protheus para diversas empresas clientes.",
+        "Liderei múltiplos projetos de migração de versão do Protheus do início ao fim.",
+        "Introduzi em diversos clientes a boas práticas de desenvolvimento, controle de versão e aprovações internas."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL"]
+    },
+    {
+      "name": "Distribuidora Record",
+      "location": "Rio de Janeiro, Brasil",
+      "url": "https://www.record.com.br",
+      "logo": "/logos/record.png",
+      "position": "Analista de Sistemas",
+      "startDate": "2013-09",
+      "endDate": "2014-06",
+      "summary": "Customizei módulos do ERP Protheus e mantive integrações de logística e fiscal.",
+      "highlights": [
+        "Customizei módulos do ERP Protheus (financeiro, compras, faturamento) em ADVPL.",
+        "Automatizei processos de faturamento e consignação; otimizei consultas MSSQL.",
+        "Mantive integrações de logística e fiscal."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "MSSQL"]
+    },
+    {
+      "name": "Doctor Clin Operadora",
+      "location": "Novo Hamburgo, Brasil",
+      "url": "https://www.doctorclin.com.br",
+      "logo": "/logos/doctorclin.png",
+      "position": "Analista de Sistemas",
+      "startDate": "2009-04",
+      "endDate": "2013-09",
+      "summary": "Customizei o módulo PLS (saúde suplementar) do Protheus e criei relatórios gerenciais em Oracle. Administrei servidores Linux e a intranet corporativa.",
+      "highlights": [
+        "Customizei o módulo PLS (saúde suplementar) do Protheus em ADVPL.",
+        "Criei relatórios gerenciais em Oracle para tomada de decisões operacionais.",
+        "Administrei servidores Linux e desenvolvi a intranet corporativa (PHP, Drupal, MySQL).",
+        "Implantei e customizei o sistema de chamados open source GLPI (PHP, MySQL)."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["ADVPL", "Protheus", "Oracle", "PHP", "Drupal", "MySQL", "Linux"]
+    },
+    {
+      "name": "Back From The Future — Laptop Lab",
+      "location": "Dublin, Irlanda",
+      "url": "https://backfromthefuture.ie",
+      "logo": "/logos/backfromthefuture.jpg",
+      "position": "Técnico de Computadores",
+      "startDate": "2008-04",
+      "endDate": "2009-03",
+      "summary": "Promovido a gerente de laboratório em 3 meses. Reparei e configurei laptops PC e Apple em uma oficina de alto volume.",
+      "highlights": [
+        "Reparei e configurei laptops PC e Apple em uma oficina de alto volume.",
+        "Promovido a gerente de laboratório em 3 meses, liderando uma equipe de 4 técnicos.",
+        "Realizei atendimento ao cliente em inglês para diagnósticos, orçamentos e retiradas."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": []
+    },
+    {
+      "name": "PRD Tecnologia de Gestão",
+      "location": "Novo Hamburgo, Brasil",
+      "url": "https://www.eligo.com.br",
+      "position": "Desenvolvedor",
+      "startDate": "2006-05",
+      "endDate": "2008-03",
+      "summary": "Contribuí para o desenvolvimento inicial de produtos em uma startup, incluindo um módulo financeiro de ERP e um sistema completo de gestão de leiloeiros.",
+      "highlights": [
+        "Contribuí para o desenvolvimento inicial de produtos em uma startup.",
+        "Construí um módulo financeiro de ERP e um sistema completo de gestão de leiloeiros com site de licitações online.",
+        "Tecnologias: xHarbour (Clipper), Java Servlets, iReport, PostgreSQL."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["xHarbour", "Clipper", "Java Servlets", "iReport", "PostgreSQL"]
+    },
+    {
+      "name": "Schmitt Materiais para Escritório",
+      "location": "Novo Hamburgo, Brasil",
+      "url": "",
+      "position": "Analista de Suporte",
+      "startDate": "2003-09",
+      "endDate": "2006-03",
+      "summary": "Cogerencio o time de suporte e a frota de equipamentos da empresa, e desenvolvi sistemas internos em xHarbour com PostgreSQL.",
+      "highlights": [
+        "Cogerencio o time de suporte e a frota de equipamentos da empresa.",
+        "Trei usuários em ambientes Linux e Windows.",
+        "Desenvolvi sistemas internos em xHarbour (Clipper) com PostgreSQL; administrei servidores Linux/Windows."
+      ],
+      "details": "",
+      "projects": [],
+      "stack": ["xHarbour", "Clipper", "PostgreSQL", "Linux", "Windows Server"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Infnet",
+      "location": "Rio de Janeiro, Brasil",
+      "area": "Desenvolvimento Mobile",
+      "studyType": "Pós-Graduação (MIT)",
+      "startDate": "2014",
+      "endDate": "2017"
+    },
+    {
+      "institution": "Universidade Feevale",
+      "location": "Novo Hamburgo, Brasil",
+      "area": "Ciência da Computação",
+      "studyType": "Bacharelado",
+      "startDate": "2004",
+      "endDate": "2012"
+    },
+    {
+      "institution": "Escola Santa Catarina",
+      "location": "Novo Hamburgo, Brasil",
+      "area": "Técnico em Informática",
+      "studyType": "Formação Técnica",
+      "startDate": "2001",
+      "endDate": "2003"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Arquitetura",
+      "keywords": ["DDD", "CQRS", "Clean Architecture", "Modular Monoliths", "Microservices", "Event-Driven Systems"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": ["Azure Functions", "Azure Service Bus", "Azure Storage", "AWS", "CI/CD", "Infrastructure as Code"]
+    },
+    {
+      "name": "Ferramentas de IA",
+      "keywords": ["Claude Code", "Cursor", "GitHub Copilot", "Fluxos de desenvolvimento assistidos por IA"]
+    },
+    {
+      "name": "Linguagens",
+      "keywords": [".NET", ".NET Core", "C#", "Python", "Java", "PHP", "ADVPL", "JavaScript", "Go", "HTML/CSS"]
+    },
+    {
+      "name": "Bancos de Dados",
+      "keywords": ["MSSQL", "MySQL", "Oracle", "PostgreSQL", "Armazenamento não relacional Azure"]
+    },
+    {
+      "name": "Práticas",
+      "keywords": ["Agile / Scrum", "Testes Automatizados", "Qualidade de Código", "Git", "SVN"]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": ["Python", "TensorFlow", "Scikit-learn", "Análise de Dados", "Reconhecimento de Imagem"]
+    },
+    {
+      "name": "Liderança",
+      "keywords": ["Gestão de Equipes", "Mentoria", "Design de Soluções", "Definição de Padrões", "Análise de Negócios"]
+    }
+  ],
+  "languages": [
+    { "language": "Português", "fluency": "Nativo" },
+    { "language": "Inglês", "fluency": "Fluente" },
+    { "language": "Espanhol", "fluency": "Conversacional" },
+    { "language": "Francês", "fluency": "Básico" }
+  ],
+  "interests": [],
+  "publications": [
+    {
+      "name": "Vetorização de Pixel Art — Trabalho de Conclusão de Curso",
+      "url": "https://github.com/michaelrbk/pixelart-vectorizer"
+    },
+    {
+      "name": "Portfólio Open Source — Android, iOS, Cordova, Ionic, .NET / .NET Core, Go",
+      "url": "https://github.com/michaelrbk"
+    }
+  ]
+}
