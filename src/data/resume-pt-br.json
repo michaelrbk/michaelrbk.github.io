@@ -49,7 +49,7 @@
         "Colaborei com DevOps na configuração de pipelines CI/CD; Realizei o gerenciamento dos repositórios GitLab e estratégias de branching.",
         "Desenvolvimento assistido por IA (Claude Code, Cursor, GitHub Copilot) — definindo práticas para uso eficaz em toda a equipe."
       ],
-      "details": "Entrei na IntrosMatter como desenvolvedor backend enquanto ainda liderava um time na BairesDev. O código foi construído sobre o framework legado interno da BairesDev, e liderei uma refatoração completa para Clean Architecture para desacoplar do framework interno um módulo de cada vez — sem nunca atrasar as entregas. Com o crescimento do projeto, migrei para dedicação exclusiva e assumi como Tech Lead.\n\nO time cresceu para oito engenheiros: três backend (eu incluso), dois full-stack, um frontend e dois QA. Também assumi a maior parte das responsabilidades de gerente de projeto junto com a liderança técnica por cerca de seis meses, até que um PM dedicado se juntou ao projeto nos últimos quatro meses.\n\nA transição gradual permitiu que o novo time escolhesse tecnologias adequadas ao substituir cada dependência do framework, resultando em uma plataforma totalmente independente e escalável. Também formalizei e documentei todos os processos do time — fluxo de tickets, code review, release e deploy, procedimentos de hotfix e restore — proporcionando um manual operacional estável.",
+      "details": "Entrei na IntrosMatter como desenvolvedor de apoio no backend enquanto ainda liderava um time na BairesDev. O código foi construído sobre o framework legado interno da BairesDev, e liderei uma refatoração completa para Clean Architecture para desacoplar do framework interno um módulo de cada vez — sem nunca atrasar as entregas. Com o crescimento do projeto, migrei para dedicação exclusiva e assumi como Tech Lead.\n\nO time cresceu para oito engenheiros: três backend (eu incluso), dois full-stack, um frontend e dois QA. Também assumi a maior parte das responsabilidades de gerente de projeto junto com a liderança técnica por cerca de seis meses, até que um PM dedicado se juntou ao projeto nos últimos quatro meses.\n\nA transição gradual permitiu que o novo time escolhesse tecnologias adequadas ao substituir cada dependência do framework, resultando em uma plataforma totalmente independente e escalável. Também formalizei e documentei todos os processos do time — fluxo de tickets, code review, release e deploy, procedimentos de hotfix e restore — proporcionando um manual operacional estável.",
       "projects": [
         { "name": "IntrosMatter" },
         { "name": "Integrações" },
@@ -67,12 +67,11 @@
       "endDate": "2025-08",
       "summary": "Promovido a Tech Lead em quatro meses. Projetei uma nova arquitetura backend e uma solução integrada de testes automatizados.",
       "highlights": [
-        "Promovido a Tech Leading em 4 meses após entrar no Core Team.",
+        "Promovido a Tech Lead em 4 meses após entrar no Parterships Core Team.",
         "Implementei padrões DDD, CQRS e Clean Architecture no código do Projeto Partnerships.",
-        "Projetei e implementei uma solução integrada de testes automatizados para o time.",
-        "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
+        "Projetei e implementei uma solução integrada de testes automatizados para o time."
       ],
-      "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto pequeno com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O código rodava sobre o framework interno da BairesDev, que apresentava diversos desafios relacionamos — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
+      "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O projeto foi construido do zero sobre o framework interno da BairesDev, que apresentava diversos desafios — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
       "projects": [
         { "name": "Partnerships" },
         { "name": "BackgroundServices" },
@@ -94,7 +93,7 @@
         "Construí microsserviços orientados a eventos no Azure (Functions, Service Bus, Storage Queues, armazenamento não relacional).",
         "Liderei 3 serviços core e fui responsável pelo design e entrega de funcionalidades.",
         "Implementei projetos com Infrastructure as Code e pipelines CI/CD totalmente automatizados.",
-        "Projetei e entreguei funcionalidades com padrões DDD e Clean Architecture."
+        "Projetei e entreguei funcionalidades com padrões DDD e Clean Architecture e testes com 99% de code coverage."
       ],
       "details": "Meu primeiro projeto de longo prazo após entrar na BairesDev. FoodX era uma startup de Vancouver atendendo um cliente âncora — Carrefour Bélgica — e juntos projetamos, construímos e colocamos em produção uma plataforma completa de e-grocery: armazenamento, captura de pedidos, separação e entrega totalmente integrados. Entrei como desenvolvedor backend e fui promovido a Tech Lead em quatro meses, assumindo três serviços core: Gerenciamento de Pedidos, Substituições Inteligentes e Embalagem Inteligente.\n\nTrabalhando ao lado de engenheiros que vieram da Amazon e Microsoft, este foi o projeto onde realmente desenvolvi minha paixão por sistemas backend — arquitetura orientada a eventos, padrões de message bus e as realidades operacionais de executar serviços em produção em escala. A startup não conseguiu se sustentar após dois anos, mas a profundidade técnica que adquiri ainda molda como projeto sistemas hoje.",
       "projects": [

@@ -69,10 +69,9 @@
       "highlights": [
         "Promoted to Technical Lead within 4 months of joining the Core Team.",
         "Drove DDD, CQRS, and Clean Architecture patterns across the Partnerships codebase.",
-        "Designed and implemented an integrated automated-testing solution for the team.",
-        "Stack: .NET, GitLab CI/CD, AWS, MSSQL."
+        "Designed and implemented an integrated automated-testing solution for the team."
       ],
-      "details": "Joined the BairesDev Core team to work on Partnerships, a small project staffed with one Tech Lead, two back-end engineers (me included), one front-end engineer, and one QA. The codebase ran on BairesDev's internal framework, which presented several real challenges — the patterns I learned working through them later informed the decoupling work I led at IntrosMatter.\n\nAfter four months I was promoted to Tech Lead of the team and stayed on the project until the codebase reached a stable, maintainable state. Partnerships is still cited internally at BairesDev Core by developers as one of the cleanest and easiest-to-maintain projects in the portfolio.",
+      "details": "Joined the BairesDev Core team to work on Partnerships, a small project staffed with one Tech Lead, two back-end engineers (me included), one front-end engineer, and one QA. The codebase was build from the ground using on BairesDev's internal framework, which presented several real challenges — the patterns I learned working through them later informed the decoupling work I led at IntrosMatter.\n\nAfter four months I was promoted to Tech Lead of the team and stayed on the project until the codebase reached a stable, maintainable state. Partnerships is still cited internally at BairesDev Core by developers as one of the cleanest and easiest-to-maintain projects in the portfolio.",
       "projects": [
         { "name": "Partnerships" },
         { "name": "Background Services" },
@@ -94,7 +93,7 @@
         "Built event-driven microservices on Azure (Functions, Service Bus, Storage Queues, non-relational storage).",
         "Lead 3 core services and owned feature design and delivery for them.",
         "Implemented projects with Infrastructure as Code and fully automated CI/CD pipelines.",
-        "Owned feature design and delivery with DDD and Clean Architecture standards."
+        "Owned feature design and delivery with DDD, Clean Architecture and tests with 99% code coverage."
       ],
       "details": "My first long-term engagement after joining BairesDev. FoodX was a Vancouver startup serving a single anchor client — Carrefour Belgium — and together we designed, built, and went live with a full e-grocery platform: storage, order capture, fulfillment, and delivery all fully connected. I joined as a back-end developer and was promoted to Tech Lead within four months, owning three of the core services: Order Management, Smart Substitutions, and Intelligent Packaging.\n\nWorking alongside engineers who had come from Amazon and Microsoft, this was the project where I really developed my passion for back-end systems — event-driven architecture, message-bus patterns, and the operational realities of running production services at scale. The startup ultimately couldn't sustain itself past the two-year mark, but the technical depth I built there still shapes how I design systems today.",
       "projects": [
