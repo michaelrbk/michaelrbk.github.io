@@ -43,10 +43,10 @@
       "summary": "Lead an 8-person engineering team — architecture, solution design, and engineering standards — while staying hands-on as a back-end contributor.",
       "highlights": [
         "Lead an 8-person engineering team, owning architecture, solution design, and engineering standards across projects.",
-        "Design new solutions end-to-end and stay involved through implementation as a hands-on back-end contributor.",
+        "Designed new solutions end-to-end and stayed involved through implementation as a hands-on back-end contributor.",
         "Defined team processes and development best practices to drive code quality and delivery consistency.",
-        "Maintain the project documentation wiki to support onboarding and knowledge sharing.",
-        "Partner with DevOps to set up CI/CD pipelines; manage GitLab repositories and branching strategy.",
+        "Maintained the project documentation wiki to support onboarding and knowledge sharing.",
+        "Partnered with DevOps to set up CI/CD pipelines; managed GitLab repositories and branching strategy.",
         "AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
       ],
       "details": "Joined IntrosMatter as a back-end contributor while still leading a BairesDev Partnerships team. The codebase had been built on BairesDev's internal legacy framework, and I led a full refactor toward Clean Architecture so we could decouple from the internal framework one module at a time — without ever slowing feature delivery. As the project hired and grew, I moved over full-time and stepped up as Tech Lead.\n\nThe team grew to eight engineers: three back-end (myself included), two full-stack, one front-end, and two QA. I also took on most of the project-manager responsibilities alongside the tech-lead role for about six months, until a dedicated PM joined for the final four months of the project.\n\nThe piece-by-piece transition let the new team choose technologies that genuinely fit the project as we replaced each framework dependency, and we landed on a fully independent, scalable platform. I also formalized and documented every team process — ticket workflow, code review, release and deploy, hotfix and restore procedures — giving the team a stable operating manual as we scaled.",
