@@ -47,6 +47,7 @@
         "Defini processos e melhores práticas de desenvolvimento para garantir qualidade e consistência nas entregas.",
         "Mantive a documentação do projeto para apoiar a integração de novos membros e o compartilhamento de conhecimento.",
         "Colaborei com DevOps na configuração de pipelines CI/CD; Realizei o gerenciamento dos repositórios GitLab e estratégias de branching.",
+        "Adaptei o framework interno para ser usado em uma arquitetura moderna com acoplamento mínimo, e liderei o time durante o processo de transição.",
         "Desenvolvimento assistido por IA (Claude Code, Cursor, GitHub Copilot) — definindo práticas para uso eficaz em toda a equipe."
       ],
       "details": "Entrei na IntrosMatter como desenvolvedor de apoio no backend enquanto ainda liderava um time na BairesDev. O código foi construído sobre o framework legado interno da BairesDev, e liderei uma refatoração completa para Clean Architecture para desacoplar do framework interno um módulo de cada vez — sem nunca atrasar as entregas. Com o crescimento do projeto, migrei para dedicação exclusiva e assumi como Tech Lead.\n\nO time cresceu para oito engenheiros: três backend (eu incluso), dois full-stack, um frontend e dois QA. Também assumi a maior parte das responsabilidades de gerente de projeto junto com a liderança técnica por cerca de seis meses, até que um PM dedicado se juntou ao projeto nos últimos quatro meses.\n\nA transição gradual permitiu que o novo time escolhesse tecnologias adequadas ao substituir cada dependência do framework, resultando em uma plataforma totalmente independente e escalável. Também formalizei e documentei todos os processos do time — fluxo de tickets, code review, release e deploy, procedimentos de hotfix e restore — proporcionando um manual operacional estável.",
@@ -68,7 +69,7 @@
       "summary": "Promovido a Tech Lead em quatro meses. Projetei uma nova arquitetura backend e uma solução integrada de testes automatizados.",
       "highlights": [
         "Promovido a Tech Lead em 4 meses após entrar no Parterships Core Team.",
-        "Implementei padrões DDD, CQRS e Clean Architecture no código do Projeto Partnerships.",
+        "Adaptei framework interno para padrões DDD, CQRS e Clean Architecture.",
         "Projetei e implementei uma solução integrada de testes automatizados para o time."
       ],
       "details": "Entrei no Core Team da BairesDev para trabalhar no Projeto Partnerships, um projeto com um Tech Lead, dois engenheiros backend (eu incluso), um frontend e um QA. O projeto foi construido do zero sobre o framework interno da BairesDev, que apresentava diversos desafios — os padrões aprendidos e desenvolvidos mais tarde inspiraram o trabalho de desacoplamento total que liderei na IntrosMatter.\n\nApós quatro meses fui promovido a Tech Lead do time e permaneci no projeto até o código atingir um estado estável e de fácil manutenção. O Projeto Partnerships ainda é citado internamente por desenvolvedores como um dos projetos mais limpos e fáceis de manter do portfólio.",
