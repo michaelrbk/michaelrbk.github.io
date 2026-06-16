@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background:#000; display:flex; justify-content:center; align-items:center; height:100vh; overflow:hidden; }
+        .tic80-container { width:100%; max-width:640px; position:relative; }
+        .tic80-canvas { display:block; width:100%; outline-style:none; }
+    </style>
+</head>
+<body>
+    <div class="tic80-container">
+        <canvas class="tic80-canvas" id="canvas" oncontextmenu="event.preventDefault()" tabindex="1"></canvas>
+    </div>
+    <script type="module">
+    import startTic80 from './tic80.js'
+    const canvas = document.getElementById('canvas')
+    startTic80({
+        canvas,
+        arguments: ['cart.tic'],
+        saveAs(blob, filename) {
+            const url = URL.createObjectURL(blob)
+            const link = document.createElement('a')
+            link.href = url; link.download = filename
+            link.click()
+        },
+        showAddPopup(callback) {
+            callback(null, null)
+            const input = document.createElement('input')
+            input.type = 'file'; input.click()
+            input.addEventListener('change', (event) => {
+                const file = event.target.files[0]
+                if (!file) return
+                const reader = new FileReader
+                reader.onload = (e) => callback(file.name, new Uint8Array(e.target.result))
+                reader.readAsArrayBuffer(file)
+            })
+        },
+        preRun: [(module) => { module.ENV.SDL_EMSCRIPTEN_KEYBOARD_ELEMENT = '#canvas' }]
+    })
+    canvas.addEventListener('click', () => canvas.focus())
+    canvas.focus()
+    </script>
+</body>
+</html>
