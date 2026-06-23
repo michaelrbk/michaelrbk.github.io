@@ -46,7 +46,7 @@
         "Design de soluções end-to-end e acompanhamento e contribuição no backend.",
         "Defini processos e melhores práticas de desenvolvimento para garantir qualidade e consistência nas entregas.",
         "Mantive a documentação do projeto para apoiar a integração de novos membros e o compartilhamento de conhecimento.",
-        "Colaborei com DevOps na configuração de pipelines CI/CD; Realizei o gerenciamento dos repositórios GitLab e estratégias de branching.",
+        "Migrei o processo de deploy de feature branches + QA manual para CI/CD trunk-based com testes automatizados, viabilizando múltiplos releases diários",
         "Adaptei o framework interno para ser usado em uma arquitetura moderna com acoplamento mínimo, e liderei o time durante o processo de transição.",
         "Desenvolvimento assistido por IA (Claude Code, Cursor, GitHub Copilot) — definindo práticas para uso eficaz em toda a equipe."
       ],
@@ -65,7 +65,7 @@
       "logo": "/logos/bairesdev.png",
       "position": "Tech Lead / Engenheiro de Software",
       "startDate": "2022-08",
-      "endDate": "2025-08",
+      "endDate": "2024-12",
       "summary": "Promovido a Tech Lead em quatro meses. Projetei uma nova arquitetura backend e uma solução integrada de testes automatizados.",
       "highlights": [
         "Promovido a Tech Lead em 4 meses após entrar no Parterships Core Team.",

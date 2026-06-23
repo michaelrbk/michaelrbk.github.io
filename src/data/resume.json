@@ -46,7 +46,7 @@
         "Designed new solutions end-to-end and stayed involved through implementation as a hands-on back-end contributor.",
         "Defined team processes and development best practices to drive code quality and delivery consistency.",
         "Maintained the project documentation wiki to support onboarding and knowledge sharing.",
-        "Partnered with DevOps to set up CI/CD pipelines; managed GitLab repositories and branching strategy.",
+        "Migrated deployment workflow from feature branches + manual QA to trunk-based CI/CD with automated tests, enabling multiple daily releases.",
         "Adapted initial codebase with internal framework to be used on a modern architecture with minimal coupling, and led the team through the transition process.",
         "AI-assisted development (Claude Code, Cursor, GitHub Copilot) — defining team-wide practices for effective use and embedding them into the development workflow."
       ],
@@ -65,7 +65,7 @@
       "logo": "/logos/bairesdev.png",
       "position": "Technical Lead / Software Engineer",
       "startDate": "2022-08",
-      "endDate": "2025-08",
+      "endDate": "2024-12",
       "summary": "Promoted to Technical Lead within four months. Architected a new backend architecture and an integrated automated-testing solution.",
       "highlights": [
         "Promoted to Technical Lead within 4 months of joining the Core Team.",
